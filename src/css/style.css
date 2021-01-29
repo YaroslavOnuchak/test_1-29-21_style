@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto"; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.btn {
+  display: block;
+  background-color: #01acac;
+  text-align: center;
+  width: 200px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  transition: all 0.5s;
+  outline: none;
+  cursor: pointer; }
+  .btn:hover {
+    transform: translatey(-10%);
+    -webkit-transform: translatey(-10%);
+    -moz-transform: translatey(-10%);
+    -ms-transform: translatey(-10%);
+    -o-transform: translatey(-10%);
+    box-shadow: 0 5px 22px 0px rgba(0, 0, 0, 0.6); }
+
+h1,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-weight: bold; }
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/header_background_v1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; }
+  header .top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    header .top-wrapper .logo {
+      position: relative;
+      width: 10%; }
+      header .top-wrapper .logo img {
+        position: relative;
+        width: 100%;
+        filter: drop-shadow(0 0 1px #ffffff);
+        -webkit-filter: drop-shadow(0 0 1px #ffffff); }
+    header .top-wrapper nav {
+      width: 50%;
+      max-height: 56px;
+      display: flex;
+      position: relative; }
+      header .top-wrapper nav a {
+        display: flex;
+        width: calc(100% / 3);
+        text-align: center;
+        text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold; }
+        header .top-wrapper nav a:nth-of-type(2) {
+          border: 0px solid #60737d;
+          border-left-width: 2px;
+          border-right-width: 2px; }
+        header .top-wrapper nav a:hover {
+          background-color: rgba(255, 0, 0, 0.197);
+          transition: all 0.5s; }
+  header section {
+    flex: 1 1 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    header section h1 {
+      margin-bottom: 20px; }
+    header section .btn-top {
+      padding: 17px 0; }
+
+main {
+  max-width: 65%;
+  margin: 0 auto; }
+  main section {
+    margin-bottom: 60px; }
+  main .toolbar,
+  main h1 {
+    text-align: right; }
+  main .toolbar input[type="text"] {
+    padding: 10px 10px;
+    border: 1px solid #000;
+    width: 200px;
+    margin-bottom: 19px; }
+  main article {
+    display: flex;
+    background-color: #efefef;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px 20px 10px 10px; }
+    main article img {
+      margin-right: 10px;
+      width: 35%;
+      object-fit: cover; }
+    main article h3 {
+      color: #1297a7; }
+    main article .post {
+      font-family: "Cantarell";
+      margin-bottom: 25px; }
+      main article .post .post-description {
+        font-weight: bold;
+        color: red;
+        font-size: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border: 0 solid #000;
+        border-bottom-width: 1px; }
+    main article .btn {
+      padding: 10px 0;
+      margin-left: auto; }
+
+.about {
+  position: relative;
+  width: 100%; }
+  .about p {
+    font-size: 15px;
+    margin-bottom: 35px;
+    font-family: "Cantarell"; }
+    .about p:last-child {
+      margin-bottom: 25px; }
+  .about img {
+    width: 100%;
+    object-fit: cover; }
+
+.contact-form {
+  margin-bottom: 0px; }
+  .contact-form h4 {
+    text-align: right; }
+  .contact-form .form_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0 16px;
+    color: #1297a7;
+    font-size: 15px; }
+    .contact-form .form_body .form_item {
+      position: relative;
+      width: 48%;
+      margin-bottom: 43px; }
+      .contact-form .form_body .form_item:last-child {
+        margin-bottom: 0;
+        width: 100%; }
+      .contact-form .form_body .form_item label {
+        position: absolute;
+        right: 0;
+        top: -24px; }
+    .contact-form .form_body input[type="text"],
+    .contact-form .form_body textarea {
+      padding: 15px 5px;
+      width: 100%; }
+  .contact-form .btn {
+    padding: 10px 0;
+    margin-left: auto; }
+
+footer {
+  padding: 0 0 15px 15px; }
